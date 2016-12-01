@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	% include('shared/html-head.html')
+	% include('shared/html-nav.html')
+	<body class="red darken-3 amber-text">
+	<div class="row">
+	<div class="col s12 center-align"><h1>Sell Ticket</h1></div> 
+    
+	<form class="col s12" action = "/sell-ticket-success" method="post"	>
+      <div class="row">
+        <div class="input-field col s4">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" name="name" type="text" class="validate" required autofocus>
+          <label for="icon_prefix">First Name</label>
+        </div>
+        <div class="input-field col s4">
+          <i class="material-icons prefix">email</i>
+          <input id="icon_telephone" name="email" type="email" class="validate" required>
+          <label for="icon_telephone">Email</label>
+        </div>
+		<div class="input-field col s4">
+          <i class="material-icons prefix">cake</i>
+          <input id="icon_telephone" name="dob" type="text" class="validate" required>
+          <label for="icon_telephone">Date of Birth (dd.mm.yyyy)</label>
+        </div>
+		<button class="col s2 offset-s5 center-align waves-effect waves-red btn"><i class="material-icons left">done</i>submit</button
+      </div>
+    </form>
+  </div>
+	</body>
+</html>
